@@ -1,0 +1,23 @@
+
+
+nav {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  min-height: 10vh;
+  background: darkorange ;
+  color: white
+  
+
+}
+
+ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+ 
+
+} 

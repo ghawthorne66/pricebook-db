@@ -1,0 +1,109 @@
+Pricebook
+
+Hierarchies of information
+- Access / login
+    - App owner creates [ services, company]
+    - Company manager creates [employee, customer,  estimate]
+    - Employee (service provider) creates [estimate]
+
+
+- App owner
+    - Companies
+    - Billing
+    - Services
+
+
+- Company (filter services + pricing)
+    - Info (contact etc)
+    {
+      id:
+      name:
+      phone:
+      ...
+    }
+    - Services
+        - Types
+    {
+      id:
+      level:
+      price:
+      time:
+      description: 
+    }
+    - Jobs
+    {
+      serviceId: []
+      date-time:
+    }
+    - Location
+    {
+      address:
+      customers: [customerId1, customerId2]
+    }
+    - Customers
+    {
+      currentLocationId:
+      info: ,
+      work-presented: {
+        locationId:
+        service: serviceId,
+        service-provider:
+        date-time:
+      },
+      work-completed: {
+        locationId:
+        servce: serviceId,
+        service-provider:
+        date-time:
+      }
+    }
+    - Employees (profile)
+    {
+      id:
+      name:
+      level:
+    }
+
+
+- Employee
+    - Services
+
+
+Presentation
+- Login
+- App owner
+- Reporting:
+    - Price (per employee, company wide) (c)
+    - Service type average (c)
+    - Service area # (c)
+    - Services Sold by Item (listed also as percentage of totals by time)
+    - Pricing averages total amounts divided by total jobs (per employee / company wide)
+    - Employee Average sale (per employee / company wide)
+    - Total Sales (employee / company filtered by time)
+- Administration: (1 Company manager)
+    - Company
+    - Employee (searchable)
+    - All services (searchable)
+- Employee (offline capable)
+    - Their services
+    - Customer options presentation
+    - Billing & confirmation (no actual billing for now)
+
+For next session
+
+[ ] JSON files with dummy data @Greg H
+[ ] Mockups for screens @Greg H
+Scratchpad
+
+Customer/employee presentation
+
+- 5 options
+    - Id
+    - Title
+    - Description
+    - Image
+    - Price 
+    - Price Levels 
+    Location
+    Search
+
